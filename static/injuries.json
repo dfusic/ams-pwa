@@ -1,0 +1,56 @@
+{
+    "injuries": [
+        "Head",
+        "Left arm",
+        "Right arm",
+        "Left Leg",
+        "Right Leg",
+        "Upper torso",
+        "Lower torso",
+        "Grenade concussion"
+    ],
+    "injury_type": [
+        {
+            "type": "Granade Concussion",
+            "treatment": "Hold ears for 30 seconds",
+            "effect": "Hold ears for 30 seconds",
+            "rest_time": "30 seconds"
+        },
+        {
+            "type": "Scratch wound",
+            "treatment": "1x bandage",
+            "effect": "No",
+            "rest_time": "2 minutes"
+        },
+        {
+            "type": "Light wound",
+            "treatment": "1x bandage",
+            "effect": "No",
+            "rest_time": "3 minutes"
+        },
+        {
+            "type": "Severe",
+            "treatment": "2x bandage",
+            "effect": "NO moving! Carry to cover!",
+            "rest_time": "6 minutes"
+        },
+        {
+            "type": "Severe",
+            "treatment": "Fixing - splint",
+            "effect": "No moving! No carrying!",
+            "rest_time": "6 minutes"
+        },
+        {
+            "type": "Critical",
+            "treatment": "Carry to base or MEDEVAC!",
+            "effect": "Carry to base or MEDEVAC!",
+            "rest_time": "8 minutes! NO TALKING!"
+        },
+        {
+            "type": "Mortal",
+            "treatment": "KIA",
+            "effect": "KIA",
+            "rest_time": "KIA"
+        }
+    ]
+}
