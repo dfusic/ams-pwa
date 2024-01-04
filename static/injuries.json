@@ -11,12 +11,6 @@
     ],
     "injury_type": [
         {
-            "type": "Granade Concussion",
-            "treatment": "Hold ears for 30 seconds",
-            "effect": "Hold ears for 30 seconds",
-            "rest_time": "30 seconds"
-        },
-        {
             "type": "Scratch wound",
             "treatment": "1x bandage",
             "effect": "No",
