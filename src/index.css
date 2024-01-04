@@ -8,6 +8,35 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.dark-background {
+  background-color: rgb(53, 50, 50);
+}
+
+.light-background {
+  background-color: white;
+}
+
+.light-text {
+  color: white;
+}
+
+.dark-text {
+  color: rgb(53, 50, 50);
+}
+
+html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+body {
+  width: 100vw;
+}
+
 .app-wrapper {
   padding-right: 15px;
   padding-left: 15px;
@@ -15,9 +44,41 @@ body {
   margin-left: auto;
 }
 
+.toggle-dark-mode-button {
+  position: absolute !important;
+  top: 10px;
+  left: 10px;
+}
+
+.app-title {
+  text-align: center;
+}
+
 .injury-list {
   list-style: none;
   padding: 0;
+  text-align: center;
+}
+
+.injury-type {
+  margin: 0;
+  padding: 0;
+}
+
+.injury-list-item {
+  margin: 8px 0;
+}
+
+.injury-list-item span {
+  font-weight: 700;
+}
+
+.injury-button {
+  width: 100% !important;
+  padding: 25px !important;
+  font-weight: bold;
+  font-size: 32px;
+  margin-top: 50px !important;
 }
 
 @media (min-width: 768px) {
@@ -34,4 +95,53 @@ body {
   .app-wrapper {
     width: 1170px;
   }
+}
+
+/* CSS */
+.button {
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.button:hover,
+.button:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.button:hover {
+  transform: translateY(-1px);
+}
+
+.button:active {
+  background-color: #f0f0f1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
 }
