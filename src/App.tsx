@@ -26,7 +26,9 @@ const App = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("/static/injuries.json");
+        const response = await fetch(
+          process.env.PUBLIC_URL + "/static/injuries.json"
+        );
         const jsonData = await response.json();
         setData(jsonData);
         console.log({ jsonData });
@@ -37,7 +39,9 @@ const App = () => {
         if (!navigator.onLine) {
           console.log("offline!!");
           // Try to get data from the cache
-          const cachedResponse = await caches.match("/static/data.json");
+          const cachedResponse = await caches.match(
+            process.env.PUBLIC_URL + "/static/injuries.json"
+          );
           if (cachedResponse) {
             const cachedData = await cachedResponse.json();
             console.log({ cachedData });
